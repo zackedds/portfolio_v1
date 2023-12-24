@@ -39,3 +39,92 @@ footer {
     background: #333;
     color: white;
 }
+
+
+#bio {
+    background-color: #f8f8f8; /* Light background for the bio section */
+    padding: 20px;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.bio-photo {
+    border-radius: 50%; /* Circular photo */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h2 {
+    margin: 0;
+    color: #333; /* Adjust color as needed */
+}
+
+.bio-text p {
+    color: #555; /* Adjust color as needed */
+}
+
+
+
+
+.experience-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures content fits within the borders */
+}
+
+
+.image-container {
+    border-right: 4px solid #007bff; /* Blue border */
+    display: flex; /* Ensure alignment */
+}
+
+.experience-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0; /* Override for individual images */
+}
+
+.experience-content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.experience-dates {
+    font-style: italic;
+    color: #555;
+}
+
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-item img {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .experience-content {
+        border-left: none;
+        border-top: 4px solid #007bff; /* Top border instead */
+    }
+}
